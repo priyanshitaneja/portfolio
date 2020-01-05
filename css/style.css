@@ -1,0 +1,249 @@
+/* TAG SELECTORS */
+
+body {
+    margin: 0; /* All 4 sides have zero margin */
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    color: #40514E;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: #004445;
+}
+
+h2 {
+    font-family: 'Tinos', serif;
+    color: #66cccc;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Tinos', serif;
+    color: #66cccc;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #61c0bf;
+    font-size: 1.5rem;
+}
+
+hr {
+    height: 0;
+/*  border-style: dotted;
+    border-width: 8px;
+    color: #a6e4e7; */
+    border: dotted #a6e4e7 8px; /* better way to define border properties (style, color, width) */
+    border-top-style: none;
+/*  border-left-style: none;
+    border-right-style: none; */ /*works well without these because height=0 */
+    width: 15%;
+    
+}
+
+/* Nav Bar */
+
+nav {
+    margin: 0;
+    padding-top: 1%;
+    background-color: #d8eaf5;
+    height: 120px;
+    min-height: 100px;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 30px;
+    padding-top: 3%;
+    margin: auto 0;
+}
+
+.logo {
+    float: left;
+    width: 7%;
+    min-width: 80px;
+    padding-left: 50px ;
+}
+
+.nav-link {
+    color: #004445;
+}
+
+
+/* CLASS SELECTORS */
+
+.top-container {
+    background-color: #d8eaf5;
+    height: 37.5rem;
+    position: relative;
+}
+
+.middle-container {
+    background-color: white;
+    padding-top: 50px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.bottom-container {
+   padding-top: 30px;
+   background-color: #d8eaf5;
+   margin-bottom: 0;
+   padding-bottom: 20px;
+}
+
+.intro {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.btn {
+    color: white;
+    background-color: #61c0bf;
+    padding: 10px 30px;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    border-radius: 1px;
+}
+
+.email {
+    width: 2rem;
+    padding-right: 5px;
+}
+
+.webdev {
+    font-weight: normal;
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Sacramento', cursive;
+    color: #004445;
+}
+
+.snowman {
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.snowfall {
+    width: 100%;
+    position: relative;
+    bottom: 1200px;
+}
+
+.left-tree {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.right-tree {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.mountain {
+    background-color: #d8eaf5 ;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.girl {
+    width: 20%;
+    height: 20%;
+    padding-top: 20px;
+}
+
+.skill-row {
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    
+}
+
+.skill-row p {
+    text-align: justify;
+}
+
+.skill-icon-1 {
+    height: 18%;
+    width: 18%;
+    float: left;
+    padding-right: 20px;
+}
+
+.skill-icon-2 {
+    height: 18%;
+    width: 18%;
+    float: right;
+    padding-left: 30px;
+}
+
+.footer-link {
+    margin: 10px 30px;
+}
+
+.footer-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.copyright {
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+/* ID SELECTORS */
+
+/* Media Query */
+@media(max-width: 700px) {
+    .top-container {
+        position: relative;
+    }
+
+    .snowfall {
+        position: relative;
+        top: -500px;
+    }
+
+    .skill-icon {
+        min-width: 100px;
+        min-height: 100px;
+        line-height: 10px;
+    }
+
+    .intro {
+        text-align: justify;
+    }
+}
+
+@media(max-width: 500px) {
+    .snowfall {
+        position: relative;
+        top: -500px;
+    }
+
+    nav {
+        height: 150px;
+    }
+}
+
